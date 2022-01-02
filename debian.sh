@@ -8,8 +8,9 @@
 # Issues:
 # Bullseye-backports don't have libvirt-daemon
 # Gnome mobile-broadband-provider-info database is outdated
-# libosinfo don't have rocky on bullseye (not a big issue)
 # I will install my patch manually before my commits get merged
+# change libvirt/qemu.conf to have non-root group and user. Then add user to libvirt group. - perfect
+# libosinfo don't have rocky on bullseye (not a big issue) - using deb package from testing
 
 apt update && apt upgrade -y
 
