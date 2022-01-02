@@ -8,9 +8,12 @@
 # Issues:
 # Bullseye-backports don't have libvirt-daemon
 # Gnome mobile-broadband-provider-info database is outdated
+# libosinfo don't have rocky on bullseye (not a big issue)
 # I will install my patch manually before my commits get merged
 
 apt update && apt upgrade -y
+
+apt install -y firmware-misc-nonfree
 
 apt install -y filezilla git wireguard vnstat wget tar
 
@@ -41,9 +44,9 @@ install_android_studio() {
 
 install_pycharm() {
   user=$(whoami)
-  wget https://files.istiak.com/others/pycharm-community-2021.3.tar.gz
-  tar -xf pycharm-community-2021.3.tar.gz
-  mv pycharm-community-2021.3 /home/${user}/pycharm
+  wget https://files.istiak.com/others/pycharm-community-2021.3.1.tar.gz
+  tar -xf pycharm-community-2021.3.1.tar.gz
+  mv pycharm-community-2021.3.1 /home/${user}/pycharm
 
   # MySQL Dependency
   # sudo apt install -y libmysqlclient-dev
