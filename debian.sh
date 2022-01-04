@@ -16,7 +16,7 @@ apt update && apt upgrade -y
 
 apt install -y firmware-misc-nonfree
 
-apt install -y filezilla git wireguard vnstat wget tar
+apt install -y filezilla git wireguard vnstat wget tar gimp
 
 wget https://files.istiak.com/deb/GitHubDesktop-linux-2.9.6-linux1.deb
 wget https://files.istiak.com/deb/code_1.61.2-1634656828_amd64.deb
