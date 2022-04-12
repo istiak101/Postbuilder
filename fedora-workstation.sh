@@ -22,7 +22,7 @@ install_python() {
   # core=$(nproc)
   # make -j $core
   # sudo make install
-  sudo dnf install -y python39 python39-pip python39-devel
+  sudo dnf install -y python310 python310-pip python310-devel
 }
 
 install_pycharm() {
