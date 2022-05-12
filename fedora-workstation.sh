@@ -3,7 +3,7 @@
 dnf upgrade-minimal -y
 
 dnf install -y epel-release
-dnf install -y ansible ethtool filezilla gedit gimp git ImageMagick mariadb-server seahorse screen sshpass vnstat wget wireguard
+dnf install -y ansible ethtool engrampa filezilla gedit gimp git ImageMagick mariadb-server seahorse screen sshpass vnstat wget wireguard
 dnf install -y rpm-sign
 
 mysql_secure_installation
