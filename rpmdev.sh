@@ -1,7 +1,7 @@
 dnf install -y rpmdevtools rpmlint epel-release
 dnf install -y mock
 
-architecture=$(uname -m)
+architecture=$(arch)
 if echo $architecture | grep -q "aarch64"; then
   mock -r epel-7-aarch64 --init
   mock -r epel-8-aarch64 --init
