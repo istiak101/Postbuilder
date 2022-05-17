@@ -1,5 +1,7 @@
 dnf install -y rpmdevtools rpmlint epel-release
 dnf install -y mock subscription-manager
+cd /etc/rhsm/ca
+curl -O https://raw.githubusercontent.com/istiak101/Postbuilder/main/redhat-uep.pem
 
 architecture=$(arch)
 if echo $architecture | grep -q "aarch64"; then
