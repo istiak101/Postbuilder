@@ -1,5 +1,5 @@
 dnf install -y rpmdevtools rpmlint epel-release
-dnf install -y mock
+dnf install -y mock subscription-manager
 
 architecture=$(arch)
 if echo $architecture | grep -q "aarch64"; then
