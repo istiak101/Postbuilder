@@ -1,5 +1,5 @@
 dnf install -y rpmdevtools rpmlint epel-release
-dnf install -y mock subscription-manager
+dnf install -y mock screen subscription-manager
 cd /etc/rhsm/ca
 curl -O https://raw.githubusercontent.com/istiak101/Postbuilder/main/redhat-uep.pem
 
