@@ -14,6 +14,9 @@ elif echo $architecture | grep -q "x86_64"; then
   mock -r rhel+epel-9-x86_64 --init
 fi
 
+#TODO
+#set TMPFS
+
 useradd istiak
 usermod -a -G mock istiak
 su -l istiak
