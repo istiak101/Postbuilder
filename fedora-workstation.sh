@@ -10,6 +10,7 @@ dnf install -y golang
 mysql_secure_installation
 
 install_qemu() {
+  sudo install -y SLOF
   sudo dnf install -y qemu qemu-kvm qemu-system-arm virt-manager
 }
 
