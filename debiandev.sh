@@ -1,5 +1,5 @@
 apt update
-apt install -y pbuilder debootstrap devscripts
+apt install -y pbuilder debootstrap devscripts dh-make
 
 architecture=$(arch)
 if echo $architecture | grep -q "aarch64"; then
