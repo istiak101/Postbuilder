@@ -7,11 +7,12 @@ dnf install -y ansible ethtool engrampa filezilla gedit gimp git ImageMagick mar
 dnf install -y rpm-sign seahorse
 dnf install -y golang
 dnf install -y p7zip p7zip-plugins
+dnf install -y poedit
 
 mysql_secure_installation
 
 install_qemu() {
-  sudo install -y SLOF
+  sudo dnf install -y SLOF
   sudo dnf install -y qemu qemu-kvm qemu-system-arm virt-manager
 }
 
@@ -43,14 +44,15 @@ install_pycharm() {
 
 install_codeblocks() {
 #TODO Build a RPM package for this
-  sudo dnf install -y build-essential libwxgtk3.0-gtk3-dev libgtk-3-dev libglib2.0-dev xterm
-  wget https://files.istiak.com/source/codeblocks-20.03.tar.xz
-  tar -xf codeblocks-20.03.tar.xz
-  cd codeblocks-20.03
-  ./configure
-  core=$(nproc)
-  make -j $core
-  sudo make install
-  sudo ldconfig
+#  sudo dnf install -y build-essential libwxgtk3.0-gtk3-dev libgtk-3-dev libglib2.0-dev xterm
+#  wget https://files.istiak.com/source/codeblocks-20.03.tar.xz
+#  tar -xf codeblocks-20.03.tar.xz
+#  cd codeblocks-20.03
+#  ./configure
+#  core=$(nproc)
+#  make -j $core
+#  sudo make install
+#  sudo ldconfig
+  dnf install -y codeblocks
 }
 
