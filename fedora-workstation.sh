@@ -7,7 +7,7 @@ dnf install -y ansible ethtool engrampa filezilla gedit gimp git ImageMagick mar
 dnf install -y rpm-sign seahorse
 dnf install -y golang
 dnf install -y p7zip p7zip-plugins
-dnf install -y poedit
+dnf install -y poedit gcolor3
 
 mysql_secure_installation
 
