@@ -8,6 +8,7 @@ dnf install -y rpm-sign seahorse
 dnf install -y golang
 dnf install -y p7zip p7zip-plugins
 dnf install -y poedit gcolor3
+dnf install -y sdrpp
 
 mysql_secure_installation
 
