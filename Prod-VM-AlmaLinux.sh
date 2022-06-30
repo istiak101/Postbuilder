@@ -14,9 +14,7 @@ read mysqlrootpass
 install_ols()  {
   rpm -Uvh https://rpms.litespeedtech.com/centos/litespeed-repo-1.1-1.el8.noarch.rpm
   dnf install -y openlitespeed
-  dnf install lsphp72 lsphp72-common lsphp72-gd lsphp72-process lsphp72-mbstring lsphp72-xml lsphp72-mcrypt lsphp72-pdo lsphp72-imap lsphp72-soap lsphp72-bcmath -y
-  dnf install lsphp73-soap lsphp73-bcmath -y
-  dnf install lsphp74 lsphp74-common lsphp74-gd lsphp74-process lsphp74-mbstring lsphp74-xml lsphp74-mcrypt lsphp74-pdo lsphp74-imap lsphp74-soap lsphp74-bcmath -y
+  dnf install lsphp74* lsphp80* lsphp81* -y
   ln -sf /usr/local/lsws/lsphp73/bin/lsphp /usr/local/lsws/fcgi-bin/lsphp5
   systemctl enable --now openlitespeed
   openssl req -newkey rsa:2048 -new -nodes -x509 -days 730 -subj "/C=BD/ST=Orion/L=Orion/O=Istiak Ferdous/CN=istiak.com" -keyout /usr/local/key.pem -out /usr/local/cert.pem
