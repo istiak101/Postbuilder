@@ -6,9 +6,8 @@ dnf install -y epel-release
 dnf install -y ansible ethtool engrampa filezilla gedit gimp git ImageMagick mariadb-server patch screen sshpass vnstat wget wireguard
 dnf install -y rpm-sign seahorse
 dnf install -y golang
-dnf install -y p7zip p7zip-plugins
-dnf install -y poedit gcolor3
-dnf install -y sdrpp
+dnf install -y p7zip p7zip-plugins poedit gcolor3 sdrpp
+dnf install -y transmission
 
 mysql_secure_installation
 
