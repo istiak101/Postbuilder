@@ -8,6 +8,8 @@ dnf install -y rpm-sign seahorse
 dnf install -y golang
 dnf install -y p7zip p7zip-plugins poedit gcolor3 sdrpp
 dnf install -y transmission
+# mold linker https://github.com/rui314
+dnf install -y mold
 
 mysql_secure_installation
 
