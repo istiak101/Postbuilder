@@ -1,3 +1,4 @@
+gunzip -S "0" *
 gunzip -S "1" *
 gunzip -S "2" *
 gunzip -S "3" *
@@ -8,6 +9,8 @@ gunzip -S "7" *
 gunzip -S "8" *
 gunzip -S "9" *
 
+
+gunzip -f -S "0" *
 gunzip -f -S "1" *
 gunzip -f -S "2" *
 gunzip -f -S "3" *
