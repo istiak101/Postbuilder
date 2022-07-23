@@ -11,6 +11,7 @@ dnf install -y transmission
 # mold linker https://github.com/rui314
 dnf install -y mold
 dnf install fedora-packager fedora-review
+sudo dnf install krb5-workstation
 
 mysql_secure_installation
 
