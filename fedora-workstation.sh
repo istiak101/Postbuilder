@@ -10,6 +10,7 @@ dnf install -y p7zip p7zip-plugins poedit gcolor3 sdrpp
 dnf install -y transmission
 # mold linker https://github.com/rui314
 dnf install -y mold
+dnf install fedora-packager fedora-review
 
 mysql_secure_installation
 
